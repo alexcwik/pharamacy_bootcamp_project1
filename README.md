@@ -1,1 +1,1 @@
-# pharamacy_bootcamp_project1
+# pharmacy_bootcamp_project1
