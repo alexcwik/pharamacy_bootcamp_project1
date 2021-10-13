@@ -29,7 +29,7 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 600px;
   max-width: 80%;
   background-color: white;
   border-radius: 5px;
@@ -46,6 +46,12 @@ body {
   background-color: hsl(var(--hue), 100%, 50%);
   border-radius: 5px;
   padding: 5px 10px;
-  color: white;
+  color: rgb(155, 53, 53);
   outline: none;
 }
+
+.quotes{
+ height: 150px;
+ max-height: 50%;
+}
+
