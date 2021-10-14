@@ -17,5 +17,3 @@ function showResponse(event){
 
 buttonSubmitEl.addEventListener("click", quoteGenerator);
 
-
-
