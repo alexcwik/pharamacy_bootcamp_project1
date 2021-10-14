@@ -150,12 +150,17 @@
     padding: 10px;
     box-shadow: 0 0 10px 2px;
   }
+
+  .container{
+    float:right;
+  }
+
   .quotes h2{
     color:rgb(0, 0, 0);
   }
   
   
-  #kanyePhoto{
+  .image{
    height: 150px;
    padding-bottom: 40px;
   }

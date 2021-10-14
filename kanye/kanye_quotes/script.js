@@ -9,6 +9,18 @@ fetch('https://api.kanye.rest') //returns kanye api as an object
       quotesDiv.innerHTML += `<p>${quote.quote}</p>`//allows to put json object to text in DOM
   })
 
+  var quote = localStorage.getItem("quotes");
+
+quotesDiv.textContent = quote;
+
+button.addEventListener("click", function() {
+  if (count < 24) {
+    count++;
+    quotesDiv.textContent = count;
+    localStorage.setItem("quotes", quote);
+  }
+});
+
 function showResponse(event){
   event.preventDefault();
   console.log(event);
