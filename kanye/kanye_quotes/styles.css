@@ -9,7 +9,7 @@
   --hue-correct: 250;
 }
 
-body {
+.body {
   padding: 0;
   margin: 0;
   display: flex;
@@ -18,14 +18,6 @@ body {
   justify-content: center;
   align-items: center;
   background-color: hsl(var(--hue), 100%, 20%);
-}
-
-.body.correct {
-  --hue: var(--hue-correct);
-}
-
-.body.wrong {
-  --hue: var(--hue-wrong);
 }
 
 .container {
@@ -50,8 +42,13 @@ body {
   outline: none;
 }
 
-.quotes{
+#kanyePhoto{
  height: 150px;
  max-height: 50%;
+}
+
+.iframe{
+  height: 40%;
+
 }
 

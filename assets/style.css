@@ -1,7 +1,11 @@
 body, html {
     height: 100%;
   }
-  
+  .kanyePhoto{
+    height: 100px;
+    float:right;
+    
+  }
   /* The hero image */
   .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
@@ -33,3 +37,5 @@ body, html {
       font-size: 50px;
     font-weight: 500;
   }
+
+  
