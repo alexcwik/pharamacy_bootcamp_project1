@@ -40,7 +40,8 @@ function getVideo() {
 
 
 function embedVideo(data) { 
-$('iframe').attr('src', 'https://www.youtube.com/embed/' + data.items[20].id.PLkd5lw_1df5DnJ_b1cwUwUMV9y5RVs0Oy)
+  console.log(data)
+$('iframe').attr('src', 'https://www.youtube.com/embed/playlistId' + data.items[20].id.playlistId)
 $('h3').text(data.items[20].snippet.title)
 $('.description').text(data.items[20].snippet.description)
 }

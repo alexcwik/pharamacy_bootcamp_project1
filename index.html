@@ -9,7 +9,7 @@
     <!-- bulma stylesheet -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 
-    <link href="./assets/style.css" rel="stylesheet">
+    <link href="assets\style.css" rel="stylesheet">
     
     <!-- carousel link -->
     <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
@@ -66,7 +66,25 @@
         </div>
         <img src="./assets/youtube-logo.png" alt="youtube-logo">
     </div>
-
+    <div class = container>
+    
+        <div id="quotes"> <!--where quotes located on html page-->
+            <h1>Your Daily Kanye Quote</h1>  
+            <script defer = "srcscript.js" charset="utf-8"></script> <!--calls java and defers running script until content loaded-->
+                <div id= quoteGenerator></div>
+                <div id = button></div>
+                <button class = "btn"></button>
+                <img id = "kanyePhoto" img src="https://m.media-amazon.com/images/I/91wpVsLoQLL._AC_SY741_.jpg">
+                </div>
+        </div>
+  <br />
+  
+  <div id ="Youtube Playlists"</div>
+    <iframe src=""></iframe>
+        <h3>Video Title</h3>
+        <p class="description">groupPlaylists<p>
+        <div id="player"></div>
+  
 
     
 
@@ -75,10 +93,12 @@
 
     </footer>
     
-    
 
-    <script src="./assets/style.js"></script>
-    
 </body>
 </html>
 <!-- $('.single-item').slick(); -->
+
+    <script src="https://youtube.googleapis.com/youtube/v3/playlistItems"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="src=https://www.youtube.com/iframe_api"></script>
+    <script src="assets\style.js"></script>

@@ -141,3 +141,32 @@
   footer {
     width: 100%;
   }
+
+  .container {
+    width: 300px;
+    max-width: 30%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+  }
+  .quotes h2{
+    color:rgb(0, 0, 0);
+  }
+  
+  
+  #kanyePhoto{
+   height: 150px;
+   padding-bottom: 40px;
+  }
+  
+  .iframe{
+    height: 40%;
+  
+  }
+  
+  .kanyePhoto{
+    margin-bottom: 20px;
+  }
+  
+  
