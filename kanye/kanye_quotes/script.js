@@ -4,48 +4,46 @@ var buttonSubmitEl = document.getElementById("#quoteGenerator")
 let quotesDiv = document.getElementById('quotes') // declares the quotes div as a variable
 
 fetch('https://api.kanye.rest') //returns kanye api as an object
-   .then(res => res.json())// parses response as a object
+  .then(res => res.json())// parses response as a object
    .then(quote => { //calls back new json
       quotesDiv.innerHTML += `<p>${quote.quote}</p>`//allows to put json object to text in DOM
-   })
+  })
 
 function showResponse(event){
-   event.preventDefault();
-   console.log(event);
-   var quotes = quoteResponseEl.textContent = response;
+  event.preventDefault();
+  console.log(event);
+  var quotes = quoteResponseEl.textContent = response;
 
 }
 
 function getVideo() { 
-   $.ajax({
-     type: 'GET', 
-     url: 'https://www.googleapis.com/youtube/v3/playlistItems',
-     data: {
-         key: 'AIzaSyAIsi7xMBnzvqyINs3IFXe1atvBBb57MQ8', 
-         part: 'snippet', 
-         maxResults: 25,
-         playlistId: 'PLkd5lw_1df5DnJ_b1cwUwUMV9y5RVs0Oy',
-         videoEmbeddable: 'true',
-         
-     },
-     success: function(data){
-         embedVideo(data)
-         
-       
-     },
-     error: function(response){ 
-         console.log("Request Failed");
-     }
-   });
- }
- 
- 
- 
- function embedVideo(data) { 
- $('iframe').attr('src', 'https://www.youtube.com/embed/' + data.items[15].id.PLkd5lw_1df5DnJ_b1cwUwUMV9y5RVs0Oy)
- $('h3').text(data.items[15].snippet.title)
- $('.description').text(data.items[15].snippet.description)
- }
- 
- 
- getVideo();
+  $.ajax({
+    type: 'GET', 
+    url: 'https://www.googleapis.com/youtube/v3/playlistItems',
+    data: {
+        key: 'AIzaSyAIsi7xMBnzvqyINs3IFXe1atvBBb57MQ8', 
+        part: 'snippet', 
+        maxResults: 25,
+        playlistId: 'PLkd5lw_1df5DnJ_b1cwUwUMV9y5RVs0Oy',
+        videoEmbeddable: 'true',
+      
+    },
+    success: function(data){
+        embedVideo(data) 
+    },
+    error: function(response){ 
+        console.log("Request Failed");
+    }
+  });
+}
+
+
+
+function embedVideo(data) { 
+$('iframe').attr('src', 'https://www.youtube.com/embed/' + data.items[20].id.PLkd5lw_1df5DnJ_b1cwUwUMV9y5RVs0Oy)
+$('h3').text(data.items[20].snippet.title)
+$('.description').text(data.items[20].snippet.description)
+}
+
+
+getVideo();
