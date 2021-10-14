@@ -1,6 +1,6 @@
-body, html {
+/* body, html {
     height: 100%;
-  }
+  } */
   
   /* The hero image */
   .hero-image {
@@ -10,6 +10,8 @@ body, html {
       rgba(0, 0, 0, 0.5),
        rgba(0, 0, 0, 0.5)), 
        url("./concert.jpg");
+       
+
        
        
   
@@ -22,7 +24,12 @@ body, html {
   background-size: 150%;
   position: relative;
   }
-  
+  nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   /* Place text in the middle of the image */
   .hero-text {
   text-align: center;
@@ -37,16 +44,17 @@ body, html {
     font-weight: 250;
   }
 
-  /* "*" selects all elements
+  /* "*" selects all elements */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: ;
+  font-family: sans-serif;
 }
 
 body{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -94,7 +102,7 @@ body{
 }
 .card:hover img {
   left: 72%;
-  height: 400px;
+  height: 350px;
 }
 .card .content {
   position: relative;
@@ -129,4 +137,7 @@ body{
   color: black;
   margin-top: 10px;
   display: inline-block;
-} */
+}
+footer {
+  width: 100%;
+}
