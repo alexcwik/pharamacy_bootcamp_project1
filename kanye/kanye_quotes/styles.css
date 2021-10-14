@@ -32,23 +32,18 @@
   color:rgb(0, 0, 0);
 }
 
-.btn {
-  --hue: var(--hue-neutral);
-  border: 1px solid hsl(var(--hue), 100%, 30%);
-  background-color: hsl(var(--hue), 100%, 50%);
-  border-radius: 5px;
-  padding: 5px 10px;
-  color: rgb(155, 53, 53);
-  outline: none;
-}
 
 #kanyePhoto{
  height: 150px;
- max-height: 50%;
+ padding-bottom: 40px;
 }
 
 .iframe{
   height: 40%;
 
+}
+
+.kanyePhoto{
+  margin-bottom: 20px;
 }
 

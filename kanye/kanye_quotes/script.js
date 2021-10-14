@@ -19,7 +19,7 @@ function showResponse(event){
 function getVideo() { 
   $.ajax({
     type: 'GET', 
-    url: 'https://www.googleapis.com/youtube/v3/playlistItems',
+    url: 'https://youtube.googleapis.com/v3/playlistItems',
     data: {
         key: 'AIzaSyAIsi7xMBnzvqyINs3IFXe1atvBBb57MQ8', 
         part: 'snippet', 
