@@ -21,7 +21,7 @@ burgerIcon.addEventListener('click', () => {
 //     });
 // });
 
-
+//NOTE: Quote button works and is now the photo. The quote generator keeps generating quotes without hiding the previous one. Tried many things can't get it to work. Will keep trying.
 let quotesDiv = document.getElementById('kanyeQuotes') // declares the quotes div as a variable
 quotesDiv.addEventListener("click", evt =>{
     fetch('https://api.kanye.rest') //returns kanye api as an object
@@ -38,7 +38,7 @@ function showResponse(event){
 }
 
 
-
+//NOTE: The youtube playlist is stored in an array but cannot get all the videos to display. Only one will show at a single time. And only if the number in the indexes in the embedVideo function are changed from 1-20. 
 function getVideo() { 
   $.ajax({
     type: 'GET', 
