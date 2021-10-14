@@ -16,15 +16,16 @@ function showResponse(event){
 
 }
 
-function getVideo() {
+function getVideo() { 
    $.ajax({
-     type: 'GET',
+     type: 'GET', 
      url: 'https://www.googleapis.com/youtube/v3/playlistItems',
      data: {
-         key: 'AIzaSyAIsi7xMBnzvqyINs3IFXe1atvBBb57MQ8',
-         part: 'snippet',
+         key: 'AIzaSyAIsi7xMBnzvqyINs3IFXe1atvBBb57MQ8', 
+         part: 'snippet', 
          maxResults: 25,
          playlistId: 'PLkd5lw_1df5DnJ_b1cwUwUMV9y5RVs0Oy',
+         videoEmbeddable: 'true',
          
      },
      success: function(data){
@@ -32,7 +33,7 @@ function getVideo() {
          
        
      },
-     error: function(response){
+     error: function(response){ 
          console.log("Request Failed");
      }
    });
@@ -40,12 +41,11 @@ function getVideo() {
  
  
  
- function embedVideo(data) {
- $('iframe').attr('src', 'https://www.youtube.com/embed/' + data.items[15].id.playlistId)
+ function embedVideo(data) { 
+ $('iframe').attr('src', 'https://www.youtube.com/embed/' + data.items[15].id.PLkd5lw_1df5DnJ_b1cwUwUMV9y5RVs0Oy)
  $('h3').text(data.items[15].snippet.title)
  $('.description').text(data.items[15].snippet.description)
  }
- 
  
  
  getVideo();
