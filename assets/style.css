@@ -69,7 +69,9 @@
     display: flex;
     align-items: center;
     transition: 0.5s;
+    box-shadow: -1px 1px 20px 6px;
   }
+  
   .card .circle{
     position: absolute;
     top: 0;
@@ -78,6 +80,7 @@
     height: 100%;
     overflow: hidden;
     background-color:#050558eb;
+  
   } 
   /* psuedo element */
   .card .circle::before{
@@ -205,10 +208,8 @@ h1{
 
 .navbar.is-light .navbar-end .navbar-link, .navbar.is-light .navbar-end>.navbar-item, .navbar.is-light .navbar-start .navbar-link, .navbar.is-light .navbar-start>.navbar-item {
     color: white;
-    font-size: 14 px;
+    font-size: 20px;
     font-weight:bold;
+    
 }
 
-.youtubePlaylists{
-  justify-content: center;
-}
