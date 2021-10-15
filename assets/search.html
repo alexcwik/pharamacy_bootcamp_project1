@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <!-- bulma stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+    <link href="style.css" rel="stylesheet">
+    
+    <!-- carousel link -->
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
+    
+    <title>Trend Share</title>
+</head>
+
+<body>
+    <nav class="navbar is-light is-spaced">
+        <!-- logo -->
+    <div class="navbar-brand">
+        <a class="navbar-item">
+        <img src="trendshare2.gif" alt="LOGO" style="max-height: 100px;">
+        </a>
+    </div>
+
+    <a class="navbar-burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+
+    <div class="navbar-menu" id="nav-links">
+        <div class="navbar-end">
+            <a class="navbar-item">Home</a>
+            <a class="navbar-item">Search by Genre</a>
+        </div>
+    </div>
+    </nav>
+    <br>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Welcome to Trend Share</h1>
+            <p>A Youtube playlist sharing platform</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="circle"></div>
+        <div class="content">
+            <form action="">
+                <label for="playlist">Playlist:</label>
+                <input type="text" id="playlist" name="playlist" placeholder="Add Playlist">
+                <br>
+                <label for="genre">Genre:</label>
+                <input type="text" id="genre" name="genre" placeholder="Add Genre">
+                <br>
+                <input id="submit" type="submit" value="Submit">
+            </form>
+            
+        </div>
+        <img src="youtube-logo.png" alt="youtube-logo">
+    </div>
+    <div class = container>
+    
+        <div id="quotes"> <!--where quotes located on html page-->
+            <h1>Click Kanye to get Motivated</h1>  
+            <script defer = "srcscript.js" charset="utf-8"></script> <!--calls java and defers running script until content loaded-->
+                <div id= quoteGenerator></div>
+                <div id = button></div>
+                <button class = "btn"></button>
+                <button id="kanyeQuotes"><img src="https://m.media-amazon.com/images/I/91wpVsLoQLL._AC_SY741_.jpg"></button>
+                <p id = quoteText>
+                </div>
+        </div>
+  <br />
+  
+  <div id ="YoutubePlaylists"></div>
+    <iframe src=""></iframe>
+        <h3>Video Title</h3>
+        <p class="description">groupPlaylists<p>
+        <div id="player"></div>
+  
+
+    
+
+    <footer class="footer has-shadow">
+        <p>Copyright Trend Share ©</p>
+
+    </footer>
+    
+    <!-- <script>
+        var playlists = [];
+        const addPlaylist = (event)=>{
+            event.preventDefault(); //stops the form submitting
+            let playlist = {
+                playlist: document.getElementById('playlist').value, //missing input conditional statement
+                genre: document.getElementById('genre').value
+            }
+            playlists.push(movie);
+            // document.forms[0].reset();  clears the form for next entries
+            document.querySelector('form').reset();
+            
+            //for display purposes
+            console.warn('added', {playlists} );
+            var pre = document.querySelector('#msg pre');
+            pre.textContent = '\n' + JSON.stringify(playlists, '\t',2);
+        }
+        // save to localStorage
+        localStorage.setItem('MyPlaylist', JSON.stringify(playlists));
+        document.addEventListener('DOMContentLoaded', ()=>{
+            document.getElementById('btn').addEventListener('click', addPlaylist);
+        });
+    </script> -->
+</body>
+</html>
+
+    <script src="https://youtube.googleapis.comv3/playlistItems"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="style.js"></script>
+
