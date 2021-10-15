@@ -201,3 +201,14 @@ h1{
   font-size: 19px;
   font-weight: bolder;
 }
+
+
+.navbar.is-light .navbar-end .navbar-link, .navbar.is-light .navbar-end>.navbar-item, .navbar.is-light .navbar-start .navbar-link, .navbar.is-light .navbar-start>.navbar-item {
+    color: white;
+    font-size: 14 px;
+    font-weight:bold;
+}
+
+.youtubePlaylists{
+  justify-content: center;
+}
