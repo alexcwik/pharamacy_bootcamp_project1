@@ -69,7 +69,9 @@
     display: flex;
     align-items: center;
     transition: 0.5s;
+    box-shadow: -1px 1px 20px 6px;
   }
+  
   .card .circle{
     position: absolute;
     top: 0;
@@ -78,6 +80,7 @@
     height: 100%;
     overflow: hidden;
     background-color:#050558eb;
+  
   } 
   /* psuedo element */
   .card .circle::before{
@@ -207,8 +210,6 @@ h1{
     color: white;
     font-size: 14 px;
     font-weight:bold;
+    
 }
 
-.youtubePlaylists{
-  justify-content: center;
-}
