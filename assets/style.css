@@ -160,7 +160,6 @@ color:white;
 }
 
 h1{
-<<<<<<< HEAD
 color: white;
 font-family: Georgia, 'Times New Roman', Times, serif;
 font-size: 19px;
@@ -176,30 +175,3 @@ font-weight: bolder;
 }
 
 
-=======
-  color: white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 19px;
-  font-weight: bolder;
-}
-
-
-.navbar.is-light .navbar-end .navbar-link, .navbar.is-light .navbar-end>.navbar-item, .navbar.is-light .navbar-start .navbar-link, .navbar.is-light .navbar-start>.navbar-item {
-    color: white;
-    font-size: 20px;
-    font-weight:bold;
-    
-}
-
-
-
-a {
-    color: #ffffff;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 10px;
-}
-
->>>>>>> 7217e15c26c20f86cdf008cd2fa4af4e8ac7705b
