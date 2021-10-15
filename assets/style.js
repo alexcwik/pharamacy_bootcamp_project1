@@ -1,17 +1,13 @@
 // mobile menu
 var burgerIcon = document.querySelector('#burger');
 var navbarMenu = document.querySelector('#nav-links');
-var playList = document.getElementById('#playlist');
-var genre = document.getElementById('#genre');
-var inputBtn = document.getElementById('#submit');
 var quoteResponseEl = document.getElementById("#response");
-var buttonSubmitEl = document.getElementById("#quoteGenerator");
-let kanyeButton = document.getElementById('kanyeQuotes');
+var buttonSubmitEl = document.getElementById("#quoteGenerator")
+let kanyeButton = document.getElementById('kanyeQuotes')
 let previousQuote 
 
 var currentQuote = 0;
-let currentQuoteIndex = 0;
-
+let currentQuoteIndex = 0
 
 
 burgerIcon.addEventListener('click', () => {
@@ -19,13 +15,13 @@ burgerIcon.addEventListener('click', () => {
 });
 
 
-$(document).ready(function(){
-    $('.your-class').slick({
-        setting: setting-value
-    });
-});
+// $(document).ready(function(){
+//     $('.your-class').slick({
+//         setting-: setting-value
+//     });
+// });
 
-// NOTE: Quote button works and is now the photo. The quote generator keeps generating quotes without hiding the previous one. Tried many things can't get it to work. Will keep trying.
+//NOTE: Quote button works and is now the photo. The quote generator keeps generating quotes without hiding the previous one. Tried many things can't get it to work. Will keep trying.
 let quotesDiv = document.getElementById('kanyeQuotes') // declares the quotes div as a variable
 quotesDiv.addEventListener("click", evt =>{
     fetch('https://api.kanye.rest') //returns kanye api as an object
@@ -75,21 +71,5 @@ $('h3').text(data.items[16].snippet.title)
 }
 
 
-// getVideo();
+getVideo();
 
-// function saveUserPlaylist(event){
-//   event.preventDefault();
-//   var userPlaylist = playList.val();
-//   console.log(userPlaylist);
-// }
-var inputBtn = addEventListener('click', function(event){
-  // event.preventDefault();
-  var userPlaylist = playList.val();
-  console.log(userPlaylist);
-});
-
-var obj = {
-  userPlaylist = genre,
-  windowlocalStorage.setItem(userPlaylist, genre)
-
-}
