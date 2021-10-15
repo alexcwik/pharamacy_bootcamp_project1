@@ -32,7 +32,11 @@ quotesDiv.addEventListener("click", evt =>{
     .then(res => res.json())// parses response as a object
     .then(quote => { //calls back new json
     quotesDiv.innerHTML += `<p>${quote.quote}</p>`//allows to put json object to text in DOM
-    
+      if(kanyeQuotes.length) {   
+      let random = Math.floor(Math.random() * quote.length);
+      quotesDiv.innerHTML = quotes[random].quote;
+      quotes.splice(random, 1)
+    }
  });     
 }
 )
@@ -66,9 +70,8 @@ function getVideo() {
 
 function embedVideo(data) { 
   console.log(data)
-$('iframe').attr('src', 'https://www.youtube.com/embed/' + data.items[20].snippet.resourceId.videoId)
-$('h3').text(data.items[20].snippet.title)
-$('.description').text(data.items[20].snippet.description)
+$('iframe').attr('src', 'https://www.youtube.com/embed/' + data.items[16].snippet.resourceId.videoId)
+$('h3').text(data.items[16].snippet.title)
 }
 
 
