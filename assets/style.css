@@ -1,19 +1,17 @@
-/* body, html {
-    height: 100%;
-  } */
-  
-  /* The hero image */
+nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* The hero image */
   .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image.
    This will make the text easier to read */
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.5),
-       rgba(0, 0, 0, 0.5)), 
-       url("./concert.jpg");
-       
-
-       
-       
+      rgba(0, 0, 0, 0.5)), 
+      url("./concert.jpg");
   
   /* Set a specific height */
   height: 150%;
@@ -24,12 +22,7 @@
   background-size: 150%;
   position: relative;
   }
-  nav{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  
   /* Place text in the middle of the image */
   .hero-text {
   text-align: center;
@@ -44,7 +37,7 @@
     font-weight: 250;
   }
 
-  /* "*" selects all elements */
+/* "*" selects all elements */
 * {
   margin: 0;
   padding: 0;
@@ -121,19 +114,20 @@ body{
   visibility: visible;
 }
 .card .content form {
-  color: white;
+  color:black;
   text-transform: none;
   font-size: 2em;
   line-height: 1em;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .card .content input {
-  color: white;
+  color: black;
+  margin: 5px;
 }
 .card .content button {
   position: relative;
   color: white;
-  padding: 10px 20px;
+  padding: 20px 20px;
   border-radius: 10px;
   background: white;
   color: black;
